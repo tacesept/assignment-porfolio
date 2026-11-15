@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My personal web development portfolio" />
+    <title>My Portfolio | Web Developer</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">KKM<span>Portfolio.</span></a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero section" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Khun Khin Maung</span></h1>
+
+            <h2>Aspiring Forward Deployed Engineer</h2>
+
+            <p>
+              Turning real-world problems into practical solutions with AI and
+              software engineering.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="assets/profile.jpeg"
+              alt="My profile photo"
+              class="profile-placeholder"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title">About <span>Me</span></h2>
+
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Who Am I?</h3>
+
+              <p>
+                Hello! I'm an aspiring Forward Deployed Engineer interested in
+                software engineering, artificial intelligence, and solving
+                real-world problems.
+              </p>
+
+              <p>
+                I'm currently building my technical foundation through
+                programming, hands-on projects, and exploring how AI can be
+                integrated into practical applications.
+              </p>
+
+              <p>
+                My goal is to build intelligent, reliable solutions that connect
+                technology with real-world needs.
+              </p>
+
+              <a href="#contact" class="btn">Let's Talk</a>
+            </div>
+
+            <div class="about-info">
+              <div class="info-card">
+                <h3>01+</h3>
+                <p>Learning Journey</p>
+              </div>
+
+              <div class="info-card">
+                <h3>04+</h3>
+                <p>Practice Projects</p>
+              </div>
+
+              <div class="info-card">
+                <h3>100%</h3>
+                <p>Passion to Learn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="section alternate" id="skills">
+        <div class="container">
+          <h2 class="section-title">My <span>Skills</span></h2>
+
+          <p class="section-description">
+            Technologies and tools I'm learning to build AI-powered software
+            solutions.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🐍</div>
+              <h3>Python</h3>
+              <p>Programming, automation and backend development.</p>
+              <span class="skill-status">Learning</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">⚡</div>
+              <h3>JavaScript</h3>
+              <p>Interactive applications and programming fundamentals.</p>
+              <span class="skill-status">Learning</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">🌐</div>
+              <h3>HTML & CSS</h3>
+              <p>Web structure, styling and responsive design.</p>
+              <span class="skill-status">Learning</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">🔌</div>
+              <h3>REST APIs</h3>
+              <p>Connecting applications and external services.</p>
+              <span class="skill-status">Exploring</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">🤖</div>
+              <h3>AI & LLMs</h3>
+              <p>Exploring AI models and intelligent applications.</p>
+              <span class="skill-status">Exploring</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">🐙</div>
+              <h3>Git & GitHub</h3>
+              <p>Version control and collaborative development.</p>
+              <span class="skill-status">Learning</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">My <span>Projects</span></h2>
+
+          <p class="section-description">
+            Some practice projects from my learning journey.
+          </p>
+
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">All</button>
+
+            <button class="filter-btn" data-filter="websites">Websites</button>
+
+            <button class="filter-btn" data-filter="javascript">
+              JavaScript Apps
+            </button>
+          </div>
+
+          <p class="result-count" id="resultCount">4 projects found</p>
+
+          <div class="projects-grid" id="projectsGrid">
+            <!-- Project cards are generated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="section alternate" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact <span>Me</span></h2>
+
+          <p class="section-description">
+            Have a question or want to work together? Send me a message.
+          </p>
+
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+
+              <p>
+                I would love to hear from you. Feel free to contact me through
+                email or social media.
+              </p>
+
+              <div class="contact-detail">
+                <span>📧</span>
+                <a href="mailto:iteinfin19@gmail.com"> iteinfin19@gmail.com </a>
+              </div>
+
+              <div class="contact-detail">
+                <span>💻</span>
+                <a
+                  href="https://github.com/tacesept"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Profile
+                </a>
+              </div>
+
+              <div class="contact-detail">
+                <span>🔗</span>
+                <a
+                  href="https://www.linkedin.com/in/thawit-t-6778772bb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn Profile
+                </a>
+              </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  minlength="2"
+                />
+
+                <small class="error" id="nameError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <small class="error" id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  maxlength="500"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+
+                <div class="message-meta">
+                  <small class="error" id="messageError"></small>
+
+                  <small id="charCount"> 0 / 500 characters </small>
+                </div>
+              </div>
+
+              <button type="submit" class="btn submit-btn">Send Message</button>
+
+              <p id="formStatus" class="form-status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span>
+          Your Name. All Rights Reserved.
+        </p>
+
+        <a href="#home">Back to Top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
