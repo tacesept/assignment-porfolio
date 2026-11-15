@@ -39,21 +39,7 @@ No package installation or build step is required.
 
 ## Project Structure
 
-my-portfolio/
-
 - index.html
 - css/style.css
 - js/main.js
 - README.md
-
-## Known Limitations
-
-- The contact form is a frontend demonstration.
-- Messages are not sent or stored.
-- Project links must be replaced with actual repository or demo URLs.
-- Profile and social links must be customized.
-
-## Credits
-
-Created as a personal portfolio practice project
-using HTML, CSS and JavaScript.

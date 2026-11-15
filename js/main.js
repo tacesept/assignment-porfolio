@@ -88,20 +88,19 @@ const projects = [
 
     technologies: ["HTML", "CSS", "JavaScript"],
 
-    url: "https://github.com/",
+    url: "https://portfolio-web-fawn-three.vercel.app",
   },
 
   {
-    title: "Restaurant Website",
+    title: "tic tac toe game",
 
-    description:
-      "A simple restaurant website displaying food menus and restaurant information.",
+    description: "old project. made 2 years ago",
 
     category: "websites",
 
-    technologies: ["HTML", "CSS"],
+    technologies: ["REACT"],
 
-    url: "https://github.com/",
+    url: "https://silly-heliotrope-085a4f.netlify.app",
   },
 
   {
@@ -181,7 +180,7 @@ function renderProjects(category = "all") {
     link.href = project.url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.textContent = "View Source Code →";
+    link.textContent = "View Live Page →";
 
     card.append(number, categoryLabel, title, description, technologies, link);
 
